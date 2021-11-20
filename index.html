@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  </head>
+
+  <body onload="mezclarCartas()">
+    <div id="juego">
+      <div id="informacion">
+        <h1>Juego de Memoria</h1>
+        <p class="cajas">
+          <strong>Movimientos:</strong> <span id="movimientos"></span>
+        </p>
+        <div id="segundos">
+          <p class="cajas">
+            <strong>Tiempo: </strong><span class="contador">0</span> segundos
+          </p>
+        </div>
+      </div>
+
+      <div id="ganador" class="tablero">
+        <div class="fila">
+          <div id="0" onclick="elegirCarta(this.id)"></div>
+          <div id="1" onclick="elegirCarta(this.id)"></div>
+          <div id="2" onclick="elegirCarta(this.id)"></div>
+          <div id="3" onclick="elegirCarta(this.id)"></div>
+        </div>
+
+        <div class="fila">
+          <div id="4" onclick="elegirCarta(this.id)"></div>
+          <div id="5" onclick="elegirCarta(this.id)"></div>
+          <div id="6" onclick="elegirCarta(this.id)"></div>
+          <div id="7" onclick="elegirCarta(this.id)"></div>
+        </div>
+        <div class="fila">
+          <div id="8" onclick="elegirCarta(this.id)"></div>
+          <div id="9" onclick="elegirCarta(this.id)"></div>
+          <div id="10" onclick="elegirCarta(this.id)"></div>
+          <div id="11" onclick="elegirCarta(this.id)"></div>
+        </div>
+        <div class="fila">
+          <div id="12" onclick="elegirCarta(this.id)"></div>
+          <div id="13" onclick="elegirCarta(this.id)"></div>
+          <div id="14" onclick="elegirCarta(this.id)"></div>
+          <div id="15" onclick="elegirCarta(this.id)"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

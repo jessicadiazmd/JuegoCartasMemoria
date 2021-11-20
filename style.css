@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(250, 236, 211);
+}
+
+#juego {
+  display: flex;
+}
+
+#informacion {
+  margin: 2%;
+  width: 25%;
+}
+
+h1 {
+  color: #3f3f3f;
+}
+
+.cajas {
+  border: 3px solid #4d4d4d;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.616);
+}
+
+.tablero {
+  border: 1px;
+  max-height: 100vh;
+}
+
+.fila {
+  display: flex;
+  margin-bottom: 0px;
+}
+
+.carta {
+  display: inline-block;
+  height: 175px;
+  width: 175px;
+}
+
+.reverso {
+  background: url("img/reverso.png");
+  background-size: cover;
+}
+
+.carta:hover {
+  transform: rotate(8deg);
+}
+
+@media (min-width: 801px) {
+  .carta {
+    display: inline-block;
+    height: 175px;
+    width: 175px;
+  }
+}
+
+@media (max-width: 800px) {
+  .carta {
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+  }
+}
